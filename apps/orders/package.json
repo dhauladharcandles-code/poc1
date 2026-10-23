@@ -1,0 +1,25 @@
+{
+  "name": "@poc/orders",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --port 3001",
+    "build": "next build",
+    "start": "next start --port 3001",
+    "typecheck": "tsc --noEmit -p ."
+  },
+  "dependencies": {
+    "@poc/mock-data": "workspace:*",
+    "@poc/tracker": "workspace:*",
+    "@poc/ui": "workspace:*",
+    "next": "16.4.3",
+    "react": "19.2.9",
+    "react-dom": "19.2.9"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.5",
+    "@types/react": "19.2.18",
+    "@types/react-dom": "19.2.7",
+    "typescript": "5.9.3"
+  }
+}

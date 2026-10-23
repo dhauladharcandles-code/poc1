@@ -1,0 +1,33 @@
+{
+  "name": "@poc/tracker",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "sideEffects": false,
+  "exports": {
+    ".": "./src/index.ts",
+    "./react": "./src/react/index.tsx",
+    "./plan": "./src/tracking-plan.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p .",
+    "test": "vitest run",
+    "plan:md": "node --experimental-strip-types --no-warnings scripts/plan-md.ts"
+  },
+  "dependencies": {
+    "@newrelic/browser-agent": "1.324.0",
+    "@rrweb/record": "2.1.7",
+    "@segment/analytics-next": "1.84.3"
+  },
+  "peerDependencies": {
+    "react": ">=19"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.5",
+    "@types/react": "19.2.18",
+    "jsdom": "27.4.0",
+    "react": "19.2.9",
+    "typescript": "5.9.3",
+    "vitest": "4.1.12"
+  }
+}

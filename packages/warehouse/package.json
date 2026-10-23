@@ -1,0 +1,23 @@
+{
+  "name": "@poc/warehouse",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts",
+    "./paths": "./src/paths.ts"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit -p .",
+    "models": "node --experimental-strip-types --no-warnings src/cli.ts",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@duckdb/node-api": "1.4.5-r.1"
+  },
+  "devDependencies": {
+    "@types/node": "22.20.5",
+    "typescript": "5.9.3",
+    "vitest": "4.1.12"
+  }
+}

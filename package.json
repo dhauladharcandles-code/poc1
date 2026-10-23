@@ -1,0 +1,19 @@
+{
+  "name": "agent-behavior-analytics-poc",
+  "private": true,
+  "packageManager": "pnpm@10.28.0",
+  "scripts": {
+    "dev": "turbo run dev --parallel",
+    "build": "turbo run build",
+    "start": "turbo run start --parallel",
+    "typecheck": "turbo run typecheck",
+    "test": "turbo run test",
+    "simulate": "pnpm --filter @poc/agent-sim simulate",
+    "models": "pnpm --filter @poc/warehouse models",
+    "reset-data": "rm -rf .data"
+  },
+  "devDependencies": {
+    "turbo": "2.11.10",
+    "typescript": "5.9.3"
+  }
+}
